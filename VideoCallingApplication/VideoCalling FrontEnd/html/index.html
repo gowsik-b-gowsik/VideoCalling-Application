@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Conference Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+  <!-- Remove the empty image-container -->
+  
+  <div class="main">
+    <div class="header">
+      <h1>Video Conference</h1>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+ 
+    <div class="new-meeting">
+      <button id="newMeetingBtn" class="primary-btn">
+        <i class="fa fa-video-camera"></i> Create a New Meeting
+      </button>
+      <div class="join-meeting">
+        <input type="text" placeholder="Enter Meeting ID" id="meetingName">
+        <button id="joinMeetingBtn" class="secondary-btn">
+          <i class="fa fa-sign-in"></i> Join
+        </button>
+      </div>
+    </div>
+
+    <div class="connected-users">
+      <h2><i class="fa fa-users"></i> Connected Users</h2>
+      <ul id="userList"></ul>
+    </div>
+  </div>
+</div>
+<script src="../js/index.js"></script>
+</body>
+</html>
